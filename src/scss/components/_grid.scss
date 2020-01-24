@@ -1,0 +1,10 @@
+.flex-row{
+        display:flex;
+        justify-content:space-between;
+        align-content:baseline;
+        
+
+        &__item{
+            flex:1;
+        }
+}

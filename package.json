@@ -1,0 +1,31 @@
+{
+  "name": "boiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacob-alxndr/boiler.git"
+  },
+  "author": "Jacob Martinez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacob-alxndr/boiler/issues"
+  },
+  "homepage": "https://github.com/jacob-alxndr/boiler#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gh-pages": "^2.0.1",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.11.0"
+  },
+  "dependencies": {
+    "gulp-clean-css": "^4.0.0",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}
