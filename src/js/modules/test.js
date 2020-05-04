@@ -2,5 +2,7 @@
 import { elements } from './DOMelements';
 // 2. Actions
 
+const { htmlTag } = elements;
 // 3. Events
-console.log('test or test');
+
+console.log(htmlTag);
