@@ -4,14 +4,23 @@ const config = require('./webpack.config');
 
 module.exports = merge(config, {
   mode: 'development', // 'production' || 'development' || 'none'
-
+  devtool: 'eval-source-map',
   output: {
-    filename: 'main.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    compress: true,
-    port: 8000,
+  module: {
+    rules: [
+      {
+        // scss rule
+        test: /\.scss$/,
+        use: [
+          'style-loader', // Creates `style` nodes from JS strings
+          'css-loader', // Translates CSS into CommonJS
+          'postcss-loader',
+          'sass-loader', // Compiles Sass to CSS
+        ],
+      },
+    ],
   },
 });
